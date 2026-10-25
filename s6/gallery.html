@@ -1,0 +1,109 @@
+
+<!--
+    Centria Edu - Basics of Web Development
+    Original author: Ville Heikkiniemi
+    Modified by: Viktor Khevavasam
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ville Heikkiniemi">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <title>S6 Photo Gallery</title>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    centria <span>edu</span>
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#topics">Topics</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <span class="label">Basics of Web Development</span>
+                    <h1>S6 Photo Gallery</h1>
+                    <p>Practising CSS image effects and clickable photos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="topics">
+            <div class="container">
+                <h2>Gallery photos</h2>
+
+                <div class="cards">
+
+                    <!-- Card 1: Faded background image -->
+                    <article class="card background-card">
+                        <h3>A Peaceful Finnish Lake</h3>
+                        <p>
+                            A quiet lake surrounded by forest, with
+                            sunlight shining through the clouds.
+                            The image is displayed as a faded
+                            CSS background.
+                        </p>
+                    </article>
+
+                    <!-- Card 2: Grayscale image -->
+                    <article class="card">
+                        <h3>Industrial Riverside</h3>
+                        <p>
+                            Old red-brick industrial buildings
+                            beside a river. The photo is displayed
+                            in black and white using CSS.
+                        </p>
+                        <img
+                            class="grayscale-image"
+                            src="images/factory.jpg"
+                            alt="Red-brick industrial buildings and a bridge beside a river">
+                    </article>
+
+                    <!-- Card 3: Clickable full-size image -->
+                    <article class="card">
+                        <h3>A Quiet Street at Sunset</h3>
+                        <p>
+                            A peaceful Finnish street with trees
+                            and warm evening sunlight.
+                            Click the photo to see its original size.
+                        </p>
+
+                        <a href="images/street.jpg"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <img
+                                class="clickable-image"
+                                src="images/street.jpg"
+                                alt="Quiet residential street with long shadows from the evening sun">
+                        </a>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Original author: Ville Heikkiniemi</p>
+            <p>Modified by: Viktor Khevavasam</p>
+        </div>
+    </footer>
+
+</body>
+</html>
