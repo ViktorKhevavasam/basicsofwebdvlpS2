@@ -1,0 +1,156 @@
+
+<!--
+    Centria Edu - Basics of Web Development
+    Original author: Ville Heikkiniemi
+    Modified by: Viktor Khevavasam
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ville Heikkiniemi">
+    <title>S7 - Contact Us</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    centria <span>edu</span>
+                </div>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#topics">Topics</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html" aria-current="page">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero contact-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <span class="label">Basics of Web Development</span>
+                    <h1>Get in touch</h1>
+                    <p>
+                        Have a question or feedback?
+                        Use the contact form below.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="topics" id="contact">
+            <div class="container">
+                <h2>Contact us</h2>
+                <p class="contact-instructions">
+                    Fill in the form below. Fields marked with *
+                    are required.
+                </p>
+
+                <form class="card contact-form"
+                      action="https://httpbin.org/post"
+                      method="post">
+
+                    <!-- Name -->
+                    <div class="form-field">
+                        <label for="name">Name *</label>
+                        <input type="text"
+                               id="name"
+                               name="name"
+                               autocomplete="name"
+                               required>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-field">
+                        <label for="email">Email address *</label>
+                        <input type="email"
+                               id="email"
+                               name="email"
+                               autocomplete="email"
+                               required>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="form-field">
+                        <label for="phone">Phone number</label>
+                        <input type="tel"
+                               id="phone"
+                               name="phone"
+                               autocomplete="tel">
+                    </div>
+
+                    <!-- Subject -->
+                    <div class="form-field">
+                        <label for="subject">Contact subject *</label>
+                        <select id="subject"
+                                name="subject"
+                                required>
+                            <option value="">Choose a subject</option>
+                            <option value="question">Question</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <!-- Contact method -->
+                    <fieldset class="form-field">
+                        <legend>Preferred contact method *</legend>
+
+                        <div class="radio-option">
+                            <input type="radio"
+                                   id="contact-email"
+                                   name="preferred_contact"
+                                   value="email"
+                                   required>
+                            <label for="contact-email">Email</label>
+                        </div>
+
+                        <div class="radio-option">
+                            <input type="radio"
+                                   id="contact-phone"
+                                   name="preferred_contact"
+                                   value="phone">
+                            <label for="contact-phone">Phone</label>
+                        </div>
+                    </fieldset>
+
+                    <!-- Message -->
+                    <div class="form-field">
+                        <label for="message">Message *</label>
+                        <textarea id="message"
+                                  name="message"
+                                  rows="6"
+                                  required></textarea>
+                    </div>
+
+                    <button class="button" type="submit">
+                        Send message
+                    </button>
+
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Original author: Ville Heikkiniemi</p>
+            <p>Modified by: Viktor Khevavasam</p>
+        </div>
+    </footer>
+
+</body>
+</html>
